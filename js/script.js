@@ -2,9 +2,9 @@
 
 var dc = {};
 
-var allCountriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
-var countryTitleHTML = "images/country-title-snippet.html";
-var countryHTML = "images/country-snippet.html";
+var allCountriesUrl = "https://davids-restaurant.herokuapp.com/categories.json";
+var countryTitleHTML = "snippets/country-title-snippet.html";
+var countryHTML = "snippets/country-snippet.html";
 
 
 // Convinience function for inserting innerHTML for 'select'
@@ -52,7 +52,7 @@ function buildAndShowCountryListHTML(countries){
           var countriesViewHtml = 
             buildCountriesViewHtml(countries, 
                                     countryTitleHTML,
-                                    countryHTML);
+                                    categoryHtml);
           insertHtml("#main-content", countriesViewHtml);
         },
         false);

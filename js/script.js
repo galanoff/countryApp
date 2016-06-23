@@ -34,7 +34,7 @@ dc.loadCountries = function() {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
     allCountriesUrl,
-    buildAndShowCountryListHTML);
+    buildAndShowCountryListHTML, false);
 };
 
 
